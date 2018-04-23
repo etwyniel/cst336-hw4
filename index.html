@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="scripts/script.js">
+	</script>
+	<title>Random function visualize</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+	<header><h3> Random function visualizer </h3></header>
+	<button id="resetButton" class="btn">
+        <img id="refresh_icon" src="img/refresh.png" alt="refresh page" />
+    </button>
+	<div id="wrapper">
+		<canvas id="mycanvas" width="800" height="500"></canvas>
+	</div>
+	<h5 id="function">f(x) = </h5>
+    <div class="form-group container" id="settings">
+    Speed:
+    <input class="form-control" type="range" id="speed" min="1" max="100">
+    Thickness:
+    <input class="form-control" type="range" id="thickness" min="1" max="5">
+    <label for="randomize">Randomize colors:</label>
+    <input class="form-control" type="checkbox" id="randomize">
+    </div>
+    <footer>
+        <hr>
+        Internet Programming 2018 &copy; Beringer <br>
+        <img src="img/csumb_logo.png" alt="CSUMB logo" />
+    </footer>
+</body>
+</html>
